@@ -148,8 +148,8 @@ const HomeScreen = () => {
           )}
 
           <View style={[styles.heroTextContainer, isWebLarge && { alignItems: 'flex-start' }]}>
-            <Text style={[styles.name, isWebLarge && { fontSize: 56 }]}>Daniel Adejarbas</Text>
-            <Text style={[styles.subtitle, isWebLarge && { fontSize: 24 }]}>Full Stack Developer</Text>
+            <Text style={[styles.name, isWebLarge && { fontSize: 56, textAlign: 'left' }]}>Daniel Adejarbas</Text>
+            <Text style={[styles.subtitle, isWebLarge && { fontSize: 24, textAlign: 'left' }]}>Full Stack Developer</Text>
             <Text style={[styles.heroDesc, isWebLarge && { textAlign: 'left' }]}>
               Apaixonado por tecnologia, inovação e soluções criativas. Desenvolvedor em formação no curso de Desenvolvimento de Software Multiplataforma.
             </Text>
@@ -315,12 +315,14 @@ const createStyles = (theme, isWebLarge) => StyleSheet.create({
     color: theme.colors.textAccent,
     fontFamily: 'FiraCode_600SemiBold',
     marginBottom: 8,
+    textAlign: 'center',
   },
   subtitle: {
     fontSize: 20,
     color: theme.colors.textSecondary,
     fontFamily: 'Inter_400Regular',
     marginBottom: 16,
+    textAlign: 'center',
   },
   heroDesc: {
     color: theme.colors.textSecondary,
